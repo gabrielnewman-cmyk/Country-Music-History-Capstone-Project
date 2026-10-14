@@ -6,6 +6,11 @@ body { margin: 0; color: #26231f; font-family: Arial, sans-serif; }
 	min-height: 110px;
 	background: #34281f;
 }
+.jumbotron.navbar {
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+}
 .jumbotron a {
 	display: grid;
 	place-items: center;
@@ -96,12 +101,22 @@ body { margin: 0; color: #26231f; font-family: Arial, sans-serif; }
 	gap: 18px;
 	align-items: stretch;
 }
+.story-row.row { margin: 0; }
+.story-row > .col-md-7,
+.story-row > .col-md-5 {
+	width: auto;
+	max-width: none;
+	padding: 0;
+}
 .story-card {
+	display: block;
 	position: relative;
 	min-height: 190px;
 	padding: 24px 25px;
 	background: #fff;
 	border: 1px solid #ded4c7;
+	border-radius: 0;
+	box-shadow: none;
 }
 .story-number {
 	margin: 0 0 12px;
@@ -114,6 +129,8 @@ body { margin: 0; color: #26231f; font-family: Arial, sans-serif; }
 .story-card > p:last-child { margin: 0; line-height: 1.6; }
 .story-media { display: grid; grid-template-rows: 1fr auto; gap: 10px; }
 .story-image { min-height: 130px; }
+.summary-image img,
+.story-image img { max-width: 100%; height: auto; }
 .story-media audio { width: 100%; height: 42px; }
 @media (max-width: 600px) {
 	.jumbotron { grid-template-columns: repeat(3, 1fr); }
